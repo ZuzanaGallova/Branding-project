@@ -12,12 +12,43 @@ header{
    background-position: center;
    background-size: cover;
  }
- #contactus{
+#contactus{
     background-image: url(../Images/contactbgphone.png);
     background-position: center;
     background-size: cover;
     height: 150vh;
  }
+.headercontact {
+    font-size: 21px;
+    margin-bottom: 1vh;
+}
+.articlecontact {
+    margin: 8vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#name {
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+#email{
+    margin-bottom: 0.5vh;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+#message {
+    margin-bottom: 0.5vh;
+    margin-bottom: 2vh;
+}
+#buttonsend{
+    background-color: #F66627;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 2.5vh;
+}
 footer{
     background-image: url(../Images/PHONEFOOTER.png);  
     height: 50vh;
