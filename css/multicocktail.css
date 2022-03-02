@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    
+}
+img{
+max-width: 100%;
+}
+nav div{
+   margin-bottom: 0%;
+   left: -6%;
+    position: relative; 
+    top: -120px;
+    right: -40%;
+    width: 110vw;
+ }
+ /*.footerz{
+       left: -20%;
+        position:absolute;
+        bottom:0;
+        width:-2000%;
+        height: 2px;
+        border: -20ch;
+
+        
+ }
