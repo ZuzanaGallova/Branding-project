@@ -6,30 +6,39 @@ img{
 max-width: 100%;
 }
 header{
-   height: 20vh;  
-   background-image: url(../Images/header.png);
-   max-height: 100%;
-   background-position: center;
-   background-size: cover;
+    position: relative;
+}
+header img{
+    width: 100vw;
+}
+ #header{
+    position: absolute;
+    top: 50px;
+    color: white;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;   
  }
 nav{
     display: none;
     background-color: #EBEBEB;
     opacity: 94%;
     padding-top: 15vh;
-    z-index: -10;
+    z-index: -1;
 }
 .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h4{
-     max-width: 100vw;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+.video{
+    background-image:url(#) ; /*video*/
+    background-color: dimgray;
+    height: 65vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
 #text{
     display: flex;
     flex-direction: column;
@@ -75,6 +84,7 @@ h4{
     margin-top: 90px;
     margin-bottom: 50px;
     height: 40vh;
+    color: white;
 }
 #orange{
     background-color: #f66627;
@@ -93,6 +103,8 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 80vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .description h3{
     margin: 20px;
@@ -101,7 +113,7 @@ h4{
     background-image: url(../Images/contactbgphone.png);
     background-position: center;
     background-size: cover;
-    height: 150vh;
+    max-width: 100vw;
  }
 .headercontact {
     font-size: 21px;
@@ -134,31 +146,66 @@ h4{
     width: 70%;
     height: 2.5vh;
 }
-footer{
-    background-image: url(../Images/PHONEFOOTER.png);  
-    height: 50vh;
+.hero{
+    background-image: url(../Images/triangles.png);
+    width: 100vw;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero img{
+    max-width: 25vw;
+}
+.branding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+.yportfolio{
+    background-color: #ebcf1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+}
+.yportfolio img{
+    margin-top: -10vh;
+    max-width: 75vw;
+}
+button{
+    background-color: #f66627;
+}
+footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: fit-content;
+    position: relative;
  }
+picture{
+    width: 100vw;
+}
  footer div{
      display: flex;
+     justify-content: space-evenly;
+ }
+ #footer{
+     color: white;
+     font-size: 30px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: center;
+     position: absolute;
+     bottom: 100px;
  }
  @media screen and (min-width: 800px){
-    header{
-        height: 40vh;  
-        background-image: url(../Images/webheader.png);}
-    footer{
-        background-image: url(../Images/webfooter.png);
-        height: 165vh;
-    }
     #contactus{
         background-image: url(../Images/contactbgweb.png);
-        height: 200vh;
+        width: 100vw;
     }
     #glass{
         background-image: url(../Images/cupweb.png);
@@ -176,8 +223,8 @@ footer{
     }
     .cardimage{
         width: 25vw;
-        margin-right: -5vw;
         margin-bottom: 5vh;
+        margin-right: 0;
     }
     .carddescription{
         margin-bottom: 5vh;
@@ -188,4 +235,21 @@ footer{
     .menu{
         max-width: 25vw;
     }
+    .yportfolio{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 63vh;
+    }
+    .second{
+        flex-direction: row-reverse;
+        opacity: 86%;
+    }
+    .yportfolio img{
+        max-width: unset;
+        max-height: 75vh;
+        margin-top: 0;
+        opacity: 100%; /*??*/
+    }
+    
  }
