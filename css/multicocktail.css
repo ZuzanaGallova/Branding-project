@@ -19,6 +19,12 @@ header img{
     width: 90vw;
     display: flex;  
  }
+.fa-ellipsis-vertical{
+    font-size: 35px;
+    position: absolute;
+    left: 2vw;
+    top: 3vh;
+}
 #logo{
     max-width: 25vw;
     position: absolute;
@@ -260,6 +266,10 @@ picture{
         max-width: 10vw;
         position: absolute;
         left: 33vw;
+    }
+    .fa-ellipsis-vertical{
+        top: 1vh;
+        font-size: 25px;
     }
     #contactus{
         background-image: url(../Images/contactbgweb.png);
