@@ -14,14 +14,15 @@ header img{
 }
 #header{
     position: absolute;
-    top: 50px;
+    top: 10px;
     color: white;
     width: 90vw;
-    display: flex;
-    justify-content: space-between;   
+    display: flex;  
  }
 #logo{
-    max-width: 20vw;
+    max-width: 25vw;
+    position: absolute;
+    left: 25vw;
 }
 nav{
     display: none;
@@ -39,7 +40,8 @@ nav{
     background-color: dimgray;
     min-height: 50vh;
     height: fit-content;
-    width: 100vw;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
 }
@@ -87,20 +89,20 @@ nav{
     background-color: #ebcf1c;
     margin-top: 90px;
     margin-bottom: 50px;
-    height: 40vh;
+    height: fit-content;
 }
 #red{
     background-color: #b4002f;
     margin-top: 90px;
     margin-bottom: 50px;
-    height: 40vh;
+    height: fit-content;
     color: white;
 }
 #orange{
     background-color: #f66627;
-    margin-top: 90px;
+    margin-top: 100px;
     margin-bottom: 50px;
-    height: 40vh;
+    height: fit-content;
 }
 .helpme{
     display: flex;
@@ -108,6 +110,14 @@ nav{
     align-items: center;
     position: relative;
     top: -60px;
+}
+.helpme img{
+    max-width: 50vw;
+}
+#kongressen{
+    max-height: 55vh;
+    position: relative;
+    top: -20px;
 }
 .description{
     display: flex;
@@ -220,6 +230,7 @@ footer{
     align-items: center;
     height: fit-content;
     position: relative;
+    overflow: hidden;
  }
 picture{
     width: 100vw;
@@ -236,7 +247,20 @@ picture{
      position: absolute;
      bottom: 13vh;
  }
+ @media screen and (min-width: 1000px){
+     #adobe{
+        max-width: 30vw;
+    }
+    #about{
+        margin-top: 0;
+    }
+ }
  @media screen and (min-width: 800px){
+    #logo{
+        max-width: 10vw;
+        position: absolute;
+        left: 33vw;
+    }
     #contactus{
         background-image: url(../Images/contactbgweb.png);
         width: 100vw;
@@ -263,8 +287,14 @@ picture{
     .carddescription{
         margin-bottom: 5vh;
     }
-    #yellow{
-        margin-top: 90px;
+    #yellow, #orange, #red{
+        margin-top: 220px;
+    }
+    .helpme{
+        top: -180px;
+    }
+    #about{
+        margin-top: 25px;
     }
     .menu{
         max-width: 25vw;
