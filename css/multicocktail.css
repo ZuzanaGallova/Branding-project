@@ -9,12 +9,16 @@ a{
     text-decoration: none;
     color: black;
 }
+a, p, h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*header{
     position: relative;
 }*/
 header img{
     width: 100vw;
     position: relative;
+    overflow: hidden;
 }
 #header{
     position: absolute;
@@ -28,6 +32,7 @@ header img{
     position: absolute;
     left: 2vw;
     top: 3vh;
+    padding: 10px;
 }
 #logo{
     max-width: 25vw;
@@ -159,37 +164,44 @@ nav{
     background-position: center;
     background-size: cover;
     max-width: 100vw;
+    overflow: hidden;
  }
 .headercontact {
     font-size: 21px;
     margin-bottom: 1vh;
+    overflow: hidden;
 }
 .articlecontact {
     margin: 8vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 #name {
     margin-top: 0.5vh;
     margin-bottom: 2vh;
     width: 100%;
+    overflow: hidden;
 }
 #email{
     margin-bottom: 0.5vh;
     margin-bottom: 2vh;
     width: 100%;
+    overflow: hidden;
 }
 #message {
     margin-bottom: 0.5vh;
     margin-bottom: 2vh;
+    overflow: hidden;
 }
 #buttonsend{
     background-color: #F66627;
     border: none;
     border-radius: 5px;
-    width: 70%;
+    width: 100%;
     height: 2.5vh;
+    overflow: hidden;
 }
 .hero{
     background-image: url(../Images/triangles.png);
@@ -210,6 +222,11 @@ nav{
     flex-direction: column;
     align-items: center;
     margin: 50px;
+    text-align: center;
+}
+.branding p{
+    margin: 20px;
+    max-width: 80vw;
 }
 .yportfolio{
     background-color: #ebcf1c;
@@ -246,9 +263,13 @@ nav{
     opacity: 86%;
 }
 .button{
-    background-color: #f66627;
+    background: linear-gradient(20deg, #b4002f, #f66627, #ebcf1c);
     padding: 10px 20px;
+    border-radius: 13px;
     border: 1px solid black;
+}
+.button:hover{
+    background: linear-gradient(20deg, #f66627, #ebcf1c);
 }
 footer{
     display: flex;
@@ -290,6 +311,9 @@ picture{
     }
  }
  @media screen and (min-width: 800px){
+    h1{
+        font-size: 32px;
+    }
     #logo{
         max-width: 10vw;
         position: absolute;
@@ -305,6 +329,7 @@ picture{
     #contactus{
         background-image: url(../Images/contactbgweb.png);
         width: 100vw;
+        overflow: hidden;
     }
     #glass{
         background-image: url(../Images/cupweb.png);
