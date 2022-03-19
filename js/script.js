@@ -1,17 +1,17 @@
 const dots = document.querySelector(".fa-ellipsis-vertical");
 const addMenu = () => {
-    const nav = document.querySelector('nav')
+    const nav = document.querySelector('nav');
     nav.classList.toggle("menu");
 }
 dots.addEventListener("click", addMenu);
 
-let popup = document.getElementById("about"); //find the button
-let closeIt = document.querySelector("main"); //find the x
-const photo = document.querySelector('.photo'); //find the video
+let popup = document.getElementById("about");
+let closeIt = document.querySelector("main"); 
+const photo = document.querySelector('.photo'); 
 
-popup.addEventListener("click", function(){ //does anzbodz press it
-    photo.classList.toggle('toggleShow'); //add the class "toggleshow" to the video element
+popup.addEventListener("click", function(){ 
+    photo.classList.toggle('toggleShow'); 
 })
-closeIt.addEventListener("click", function(){//does anzbodz press the x button
-    photo.classList.remove('toggleShow');//remove the class
+closeIt.addEventListener("click", function(){
+    photo.classList.remove('toggleShow');
 })
