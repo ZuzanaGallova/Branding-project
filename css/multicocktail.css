@@ -290,10 +290,11 @@ nav{
     margin-top: 15vh;
     padding-bottom: 5vh;
     margin-bottom: 5vh;
+    color: white;
 }
 .rsecond{
     /*opacity: 86%;*/
-    background-color:rgba(180,0,47,0.8)
+    background-color:rgba(180,0,47,0.86)
 }
 .osecond{
     /*opacity: 86%;*/
@@ -379,6 +380,9 @@ picture{
     h1{
         font-size: 32px;
     }
+    h2{
+        font-size: 35px;
+    }
     #logo{
         max-width: 10vw;
         position: absolute;
@@ -430,7 +434,11 @@ picture{
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 20vw;
+        max-width: 50vw;
+    }
+    .carddescription p{
+        font-size: 23px;
+        text-align: center;
     }
     #yellow, #orange, #red{
         margin-top: 220px;
@@ -457,7 +465,7 @@ picture{
         align-items: center;
         height: 63vh;
     }
-    .second{
+    .rsecond, .osecond, .ysecond{
         flex-direction: row-reverse;
     }
     .yportfolio img, .oportfolio img, .rportfolio img{
