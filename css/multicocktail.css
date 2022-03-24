@@ -78,11 +78,13 @@ nav{
     top: 1%;
     width: 100%;
 }
+video{
+    max-width: 100vw;
+}
 .video{
-    background-color: dimgray;
-    min-height: 50vh;
+    /*background-color: rgb(207, 207, 207);*/
     height: fit-content;
-    width: 100%;
+    max-width: 100vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -113,6 +115,8 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: 100%;
+    overflow: hidden;
 }
 .card{
     background-color: white;
@@ -125,6 +129,11 @@ nav{
 .cardimage{
     width: 40vw;
     margin-right: 5vw;
+}
+.cardimage video{
+    width: 40vw;
+    margin-top: -5vh;
+    margin-bottom: -5vh;
 }
 .carddescription{
     display: flex;
@@ -172,10 +181,17 @@ nav{
     z-index: 1;
 }
 .toggleShow{
-    display: block;
+    display: flex;
+    justify-content: center;
     padding: 5vw;
     width: 100vw;
-    background-color: #EBEBEB;
+    background-color: #ebcf1c;
+}
+#x{
+    margin-left: -35px;
+    font-size: 30px;
+    color: rgb(73, 73, 73);
+    font-family: 'Courier New', Courier, monospace;
 }
 .helpme img{
     max-width: 50vw;
@@ -203,16 +219,23 @@ nav{
     overflow: hidden;
  }
 .headercontact {
-    font-size: 21px;
+    font-size: 23px;
     margin-bottom: 1vh;
     overflow: hidden;
+}
+form{
+    text-align: left;
 }
 .articlecontact {
     margin: 8vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     overflow: hidden;
+}
+.articlecontact p{
+    max-width: 60vw;
 }
 #name {
     margin-top: 0.5vh;
@@ -271,6 +294,10 @@ nav{
 }
 .yportfolio img, .oportfolio img, .rportfolio img{
     margin-top: -10vh;
+    max-width: 75vw;
+}
+.oportfolio video{
+    margin-top: -15vh;
     max-width: 75vw;
 }
 .oportfolio{
@@ -383,6 +410,9 @@ picture{
     h2{
         font-size: 35px;
     }
+    .headercontact{
+        font-size: 35px;
+    }
     #logo{
         max-width: 10vw;
         position: absolute;
@@ -428,16 +458,26 @@ picture{
         width: 25vw;
         margin-bottom: 5vh;
         margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .cardimage video{
+        width: 25vw;
+        margin-top: -7vh;
+        margin-bottom: -5vh;
+    }
+    #poster{
+        max-height: 32vh;
     }
     .carddescription{
         margin-bottom: 5vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 50vw;
+        max-width: 21vw;
     }
     .carddescription p{
-        font-size: 23px;
+        font-size: 20px;
         text-align: center;
     }
     #yellow, #orange, #red{
@@ -468,7 +508,7 @@ picture{
     .rsecond, .osecond, .ysecond{
         flex-direction: row-reverse;
     }
-    .yportfolio img, .oportfolio img, .rportfolio img{
+    .yportfolio img, .oportfolio video, .oportfoli img, .rportfolio img{
         max-width: unset;
         max-height: 75vh;
         margin-top: 0;
