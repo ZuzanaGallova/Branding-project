@@ -377,6 +377,10 @@ picture{
     font-size: 40px;
     margin-top: 15px;
 }
+#white{
+    color: white;
+    font-size: 20px;
+}
 @media screen and (min-width: 450px){
     nav{
         padding-top: 21vh;
@@ -444,7 +448,7 @@ picture{
         flex-direction: row;
         align-items: center;
         margin-bottom: 10vh;
-        height:173vh;
+        height:182vh;
     }
     .card{
         flex-direction: column;
@@ -482,6 +486,9 @@ picture{
     }
     #yellow, #orange, #red{
         margin-top: 220px;
+    }
+    #white{
+        font-size: 25px;
     }
     .helpme{
         top: -180px;
@@ -521,6 +528,10 @@ picture{
     #footer p a{
         font-size: 30px;
         margin-top: 15px;
+    }
+    #footer h3 a{
+        font-size: 45px;
+        font-weight: normal;
     }
     .fa-brands{
         font-size: 5vh;
